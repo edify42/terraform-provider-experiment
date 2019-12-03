@@ -1,11 +1,11 @@
 package main
 
 import (
+	"github.com/edify42/terraform-provider-stackjanitor/stackjanitor"
 	"github.com/hashicorp/terraform/plugin"
-	"github.com/terraform-providers/terraform-provider-template/template"
 )
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
-		ProviderFunc: template.Provider})
+		ProviderFunc: stackjanitor.Provider})
 }
